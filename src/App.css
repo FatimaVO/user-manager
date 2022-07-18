@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  background-color: rgb(255, 255, 255);
+}
+
+h1 {
+  color: rgb(58, 69, 105);
+}
+
+.usersList {
+  max-height: 100vh;
+  overflow-y: scroll;
+  padding: 20px;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 70px;
+  background-color: rgb(26, 31, 48);
+
+}
+
+.userCard {
+  list-style: none;
+  width: 65%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  color: rgb(51, 51, 51);
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  text-align: left;
+  max-width: 200px;
+  padding-left: 15px;
+}
+
+.userName {
+  font-size: 15px;
+}
+
+.userButtons {
+  padding-right: 15px;
+}
+
+.editButton,
+.deleteButton {
+  border: none;
+  background-color: white;
+  margin: 5px;
+}
+
+.fa-solid {
+  color: rgb(26, 31, 48);
+}
+
+.fa-pencil {
+  font-size: 16px;
+}
+
+.fa-trash-can {
+  color: red;
+  font-size: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  padding-left: 30px;
+  border-radius: 10px;
+  height: 400px;
+  width: 350px;
+  margin: 10px;
+  align-self: center;
+  justify-self: center;
+}
+
+.userInputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: grid;
+  justify-items: left;
+  align-items: flex-start;
+  grid-template-columns: 10% 90%;
+  width: 300px;
+  margin: 10px;
+}
+
+.userInputs input {
+  width: 90%;
+  padding: 5px;
+  border: 0;
+  border-radius: 4px;
+  font-size: 15px;
+  padding-left: 7px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.userInputs input::placeholder {
+  padding-left: 7px;
+}
+
+
+.formButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.formButtons button {
+  width: 45%;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.submit {
+  background-color: rgb(58, 69, 105);
+  color: white;
+}
+
+.clear {
+  background-color: rgb(87, 86, 86);
+  color: white;
+}
+
+.submit:hover {
+  background-color: rgb(49, 59, 90);
+  font-size: 14px;
+}
+
+.clear:hover {
+  background-color: rgb(58, 58, 58);
+  font-size: 14px;
+}
+
+button:hover {
+  cursor: pointer;
+}
